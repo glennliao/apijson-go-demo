@@ -1,0 +1,8 @@
+### list
+POST http://localhost:8090/get
+Content-Type: application/json
+
+{
+  "t_user": {},
+  "t_user[]": {}
+}
