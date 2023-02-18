@@ -1,0 +1,134 @@
+[
+  {
+    "tag": "Bookmark",
+    "version": "1",
+    "method": "POST",
+    "structure": {
+      "Bookmark": {},
+      "GroupBookmark": {}
+    },
+    "execQueue": "Bookmark,GroupBookmark"
+  },
+  {
+    "tag": "Bookmark",
+    "version": "1",
+    "method": "PUT",
+    "structure": {
+    }
+  },
+  {
+    "tag": "Bookmark",
+    "version": "1",
+    "method": "DELETE",
+    "structure": {
+    }
+  },
+  {
+    "tag": "BookmarkCate",
+    "version": "1",
+    "method": "POST",
+    "structure": {
+    }
+  },
+  {
+    "tag": "BookmarkCate",
+    "version": "1",
+    "method": "PUT",
+    "structure": {
+    }
+  },
+  {
+    "tag": "BookmarkCate",
+    "version": "1",
+    "method": "DELETE",
+    "structure": {
+    }
+  },
+  {
+    "tag": "Group",
+    "version": "1",
+    "method": "POST",
+    "structure": {
+      "Group": {},
+      "GroupUser[]": {}
+    },
+    "execQueue": "Group,GroupUser[]"
+  },
+  {
+    "tag": "Group",
+    "version": "1",
+    "method": "PUT",
+    "structure": {
+    }
+  },
+  {
+    "tag": "Group",
+    "version": "1",
+    "method": "DELETE",
+    "structure": {
+    }
+  },
+  {
+    "tag": "GroupUser",
+    "version": "1",
+    "method": "POST",
+    "structure": {
+    }
+  },
+  {
+    "tag": "GroupUser",
+    "version": "1",
+    "method": "PUT",
+    "structure": {
+    }
+  },
+  {
+    "tag": "GroupUser",
+    "version": "1",
+    "method": "DELETE",
+    "structure": {
+    }
+  },
+  {
+    "tag": "GroupBookmark",
+    "version": "1",
+    "method": "POST",
+    "structure": {
+    }
+  },
+  {
+    "tag": "GroupBookmark",
+    "version": "1",
+    "method": "PUT",
+    "structure": {
+    }
+  },
+  {
+    "tag": "GroupBookmark",
+    "version": "1",
+    "method": "DELETE",
+    "structure": {
+    }
+  },
+  {
+    "tag": "User",
+    "version": "1",
+    "method": "POST",
+    "structure": {
+    }
+  },
+  {
+    "tag": "User",
+    "version": "1",
+    "method": "PUT",
+    "structure": {
+    }
+  },
+  {
+    "tag": "User",
+    "version": "1",
+    "method": "DELETE",
+    "structure": {
+    }
+  }
+]

@@ -1,24 +1,27 @@
 package main
 
 import (
-	"apijson-go-demo/todo/app"
+	"apijson-go-demo/bookmark/app"
 	"context"
 	"github.com/glennliao/apijson-go/config"
 	"github.com/glennliao/apijson-go/framework"
 	"github.com/glennliao/apijson-go/framework/handler"
 	_ "github.com/gogf/gf/contrib/drivers/mysql/v2"
+	_ "github.com/gogf/gf/contrib/drivers/sqlite/v2"
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/net/ghttp"
 )
 
 func main() {
+	ctx := context.Background()
+	app.Init(ctx)
 
 	framework.Init()
 
-	config.NoAccessVerify = false // 全局配置验证权限开关
 	config.AccessConditionFunc = app.AccessCondition
 	config.DefaultRoleFunc = app.Role
-	config.Debug = true
+	config.AddRole(app.RoleGroupAdmin)
+	config.AddRole(app.RoleGroupUser)
 
 	s := g.Server()
 

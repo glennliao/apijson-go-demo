@@ -23,7 +23,7 @@ func init() {
 
 	config.DefaultRoleFunc = app.Role
 	config.AccessConditionFunc = app.AccessCondition
-	config.AccessVerify = false // 全局配置验证权限开关
+	config.NoAccessVerify = false // 全局配置验证权限开关
 
 	g.Log().SetLevelStr("all")
 	//g.Log().SetLevelStr("info") // 需要显示debug时将本句注释即可
@@ -59,7 +59,7 @@ func iAmUnKnow() context.Context {
 func queryByJsonStr(ctx context.Context, req string) (res g.Map, err error) {
 	reqMap := gjson.New(req).Map()
 	q := query.New(ctx, reqMap)
-	q.AccessVerify = config.AccessVerify
+	q.NoAccessVerify = config.NoAccessVerify
 	q.AccessCondition = config.AccessConditionFunc
 	//q.PrintProcessLog = true
 	return q.Result()

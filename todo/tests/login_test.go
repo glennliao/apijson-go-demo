@@ -12,11 +12,11 @@ import (
 
 func TestLoginExample(t *testing.T) {
 
-	oriAccessVerify := config.AccessVerify
+	oriAccessVerify := config.NoAccessVerify
 
 	Convey("NoticeInner (登录可见资源)", t, func() {
 
-		config.AccessVerify = true
+		config.NoAccessVerify = true
 
 		req := `
 			{
@@ -58,6 +58,6 @@ func TestLoginExample(t *testing.T) {
 
 	})
 
-	config.AccessVerify = oriAccessVerify
+	config.NoAccessVerify = oriAccessVerify
 
 }

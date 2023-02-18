@@ -11,7 +11,7 @@ import (
 func main() {
 	framework.Init()
 
-	config.AccessVerify = false // 全局配置验证权限开关
+	config.NoAccessVerify = false // 全局配置验证权限开关
 
 	s := g.Server()
 
